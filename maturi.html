@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Матури – резултати от пробни изпити по математика и БЕЛ и предстоящи дати." />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Матури – Академия Усмивка</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container navbar">
+        <a class="brand" href="/">
+          <span class="brand-logo"></span>
+          <span>Академия Усмивка</span>
+        </a>
+        <nav class="nav" aria-label="Основно меню">
+          <a href="/">Начало</a>
+          <a href="/kursove.html">Курсове</a>
+          <a href="/tsenorazpis.html">Ценоразпис</a>
+          <a href="/maturi.html" class="active">Матури</a>
+          <a href="/uchiteli.html">Преподаватели</a>
+          <a href="/kontakti.html" class="nav-cta btn btn-primary">Контакти</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Отвори меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="container">
+          <a href="/">Начало</a>
+          <a href="/kursove.html">Курсове</a>
+          <a href="/tsenorazpis.html">Ценоразпис</a>
+          <a href="/maturi.html">Матури</a>
+          <a href="/uchiteli.html">Преподаватели</a>
+          <div class="menu-cta">
+            <a href="/kontakti.html" class="btn btn-primary" style="width:100%; justify-content:center;">Свържете се с нас</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="badge">НВО / ДЗИ</span>
+          <h1 class="section-title">Матури</h1>
+          <div class="breadcrumbs">Начало / Матури</div>
+        </div>
+      </section>
+
+      <section class="section" id="results">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="split-title">Резултати от пробни</h2>
+            <p class="section-subtitle">Тук ще качваме резултатите от пробните изпити.</p>
+          </div>
+          <div class="grid">
+            <div class="card tinted-blue">
+              <h3>Математика</h3>
+              <p class="muted">Скоро...</p>
+            </div>
+            <div class="card tinted-green">
+              <h3>Български език и литература</h3>
+              <p class="muted">Скоро...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="upcoming">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="split-title">Предстоящи изпити</h2>
+            <p class="section-subtitle">Какви изпити предстоят</p>
+          </div>
+          <ul class="schedule">
+            <li><span class="lbl">Пробен – Математика</span> <span class="time">Дата: скоро</span></li>
+            <li><span class="lbl">Пробен – БЕЛ</span> <span class="time">Дата: скоро</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="top">
+          <div class="brand"><span class="brand-logo"></span><span>Академия Усмивка</span></div>
+          <div class="nav">
+            <a href="/">Начало</a>
+            <a href="/kursove.html">Курсове</a>
+            <a href="/tsenorazpis.html">Ценоразпис</a>
+            <a href="/maturi.html">Матури</a>
+            <a href="/uchiteli.html">Преподаватели</a>
+            <a href="/kontakti.html">Контакти</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div>© <span id="year"></span> Академия Усмивка</div>
+          <div class="muted">Образование с отношение</div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  </html>
+
+

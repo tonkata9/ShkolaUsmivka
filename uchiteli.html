@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Екипът на Академия Усмивка – опитни преподаватели и ментори, отдадени на развитието на учениците." />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Преподаватели – Академия Усмивка</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container navbar">
+        <a class="brand" href="/">
+          <span class="brand-logo"></span>
+          <span>Академия Усмивка</span>
+        </a>
+        <nav class="nav" aria-label="Основно меню">
+          <a href="/">Начало</a>
+          <a href="/kursove.html">Курсове</a>
+          <a href="/tsenorazpis.html">Ценоразпис</a>
+          <a href="/maturi.html">Матури</a>
+          <a href="/uchiteli.html">Преподаватели</a>
+          <a href="/kontakti.html" class="nav-cta btn btn-primary">Контакти</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Отвори меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="container">
+          <a href="/">Начало</a>
+          <a href="/tsenorazpis.html">Ценоразпис</a>
+          <a href="/maturi.html">Матури</a>
+          <a href="/uchiteli.html">Учители</a>
+          <a href="/kursove.html">Курсове</a>
+          <div class="menu-cta">
+            <a href="/kontakti.html" class="btn btn-primary" style="width:100%; justify-content:center;">Свържете се с нас</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="badge">Нашият екип</span>
+          <h1 class="section-title">Преподаватели</h1>
+          <div class="breadcrumbs">Начало / Преподаватели</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge">Екип</span>
+            <h2 class="section-title">Нашите преподаватели</h2>
+            <p class="section-subtitle">Снимка и кратко представяне</p>
+          </div>
+          <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="card" style="text-align:center;">
+              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
+              <h3 style="margin:12px 0 4px;">Мария Иванова</h3>
+              <div class="title-muted">Математика</div>
+              <p class="muted">12+ години опит. Олимпиадна подготовка. Индивидуален подход според целите на ученика.</p>
+            </div>
+            <div class="card" style="text-align:center;">
+              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
+              <h3 style="margin:12px 0 4px;">Георги Петров</h3>
+              <div class="title-muted">Английски език</div>
+              <p class="muted">IELTS/CAE подготовка. Практически техники за говорене и писане.</p>
+            </div>
+            <div class="card" style="text-align:center;">
+              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
+              <h3 style="margin:12px 0 4px;">Елица Димитрова</h3>
+              <div class="title-muted">Български език</div>
+              <p class="muted">НВО/ДЗИ. Умения за есе и преразказ, четене с разбиране и аргументация.</p>
+            </div>
+            <div class="card" style="text-align:center;">
+              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
+              <h3 style="margin:12px 0 4px;">Никола Костов</h3>
+              <div class="title-muted">Програмиране</div>
+              <p class="muted">Python и уеб. Проектно-базирано обучение и реални примери.</p>
+            </div>
+            <div class="card" style="text-align:center;">
+              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
+              <h3 style="margin:12px 0 4px;">Анна Георгиева</h3>
+              <div class="title-muted">Химия</div>
+              <p class="muted">Разбираеми обяснения, задачи и подготовка за изпити.</p>
+            </div>
+            <div class="card" style="text-align:center;">
+              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
+              <h3 style="margin:12px 0 4px;">Петър Николов</h3>
+              <div class="title-muted">Физика</div>
+              <p class="muted">Реални примери и експерименти за трайно разбиране.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="top">
+          <div class="brand"><span class="brand-logo"></span><span>Академия Усмивка</span></div>
+          <div class="nav">
+            <a href="/">Начало</a>
+            <a href="/kursove.html">Курсове</a>
+            <a href="/tsenorazpis.html">Ценоразпис</a>
+            <a href="/maturi.html">Матури</a>
+            <a href="/uchiteli.html">Преподаватели</a>
+            <a href="/kontakti.html">Контакти</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div>© <span id="year"></span> Академия Усмивка</div>
+          <div class="muted">Образование с отношение</div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  </html>
+
+

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Цени за индивидуални и групови уроци в Академия Усмивка. Промоции и пакети." />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Ценоразпис – Академия Усмивка</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container navbar">
+        <a class="brand" href="/">
+          <span class="brand-logo"></span>
+          <span>Академия Усмивка</span>
+        </a>
+        <nav class="nav" aria-label="Основно меню">
+          <a href="/">Начало</a>
+          <a href="/kursove.html">Курсове</a>
+          <a href="/tsenorazpis.html">Ценоразпис</a>
+          <a href="/maturi.html">Матури</a>
+          <a href="/uchiteli.html">Преподаватели</a>
+          <a href="/kontakti.html" class="nav-cta btn btn-primary">Контакти</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Отвори меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="container">
+          <a href="/">Начало</a>
+          <a href="/kursove.html">Курсове</a>
+          <a href="/tsenorazpis.html">Ценоразпис</a>
+          <a href="/maturi.html">Матури</a>
+          <a href="/uchiteli.html">Преподаватели</a>
+          <div class="menu-cta">
+            <a href="/kontakti.html" class="btn btn-primary" style="width:100%; justify-content:center;">Свържете се с нас</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="badge">Цени и промоции</span>
+          <h1 class="section-title">Ценоразпис</h1>
+          <div class="breadcrumbs">Начало / Ценоразпис</div>
+        </div>
+      </section>
+
+      <section class="section" id="individual-prices">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="split-title">Индивидуални уроци</h2>
+            <p class="section-subtitle">Цените важат и за онлайн обучение</p>
+          </div>
+          <div class="grid pricing-grid">
+            <div class="card price-card tinted-blue">
+              <h3>Стандартен урок</h3>
+              <div class="price">40 лв <small>/ 60 мин</small></div>
+              <p class="muted">90 мин – 60 лв</p>
+              <div class="hr"></div>
+              <p class="muted">По: математика, БЕЛ, руски, немски, испански, състезателна математика 1–4 кл. и други без подготовка за университетите.</p>
+              <div class="spacer"></div>
+              <a class="btn btn-primary" href="/kontakti.html">Запиши се</a>
+            </div>
+            <div class="card price-card tinted-green">
+              <h3>Кандидатстудентски</h3>
+              <div class="price">50 лв <small>/ 60 мин</small></div>
+              <p class="muted">90 мин – 75 лв</p>
+              <div class="hr"></div>
+              <p class="muted">Интензивна подготовка за университети (напр. Медицински, КС СУ).</p>
+              <div class="spacer"></div>
+              <a class="btn" href="/kontakti.html">Заяви час</a>
+            </div>
+            <div class="card price-card" style="border:2px dashed rgba(34,197,94,0.35)">
+              <div class="ribbon">Специална оферта</div>
+              <h3>2 предмета (индивидуални)</h3>
+              <div class="price">35 лв <small>/ предмет / 60 мин</small></div>
+              <p class="muted">90 мин – 52.50 лв</p>
+              <div class="hr"></div>
+              <p class="muted">При записване на 2 предмета – 35 лв на предмет. Важи и онлайн.</p>
+              <div class="spacer"></div>
+              <a class="btn btn-primary" href="/kontakti.html">Възползвай се</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="group-prices">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="split-title">Групови уроци</h2>
+            <p class="section-subtitle">Малки групи от 3–5 човека</p>
+          </div>
+          <div class="grid pricing-grid">
+            <div class="card price-card tinted-blue">
+              <h3>НВО 7 клас – БЕЛ</h3>
+              <p class="muted">Цена за 1 модул (8 урока): <strong>450 лв</strong></p>
+            </div>
+            <div class="card price-card tinted-green">
+              <h3>НВО 7 клас – Математика</h3>
+              <p class="muted">Цена за 1 модул (8 урока): <strong>450 лв</strong></p>
+            </div>
+            <div class="card price-card tinted-amber">
+              <h3>Промо пакет (БЕЛ + Математика)</h3>
+              <p class="muted">Цена за 1 модул на предмет: <strong>400 лв</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contest-math">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="split-title">Състезателна математика</h2>
+            <p class="section-subtitle">3-ти и 4-ти клас</p>
+          </div>
+          <div class="grid pricing-grid">
+            <div class="card price-card tinted-purple">
+              <h3>3-ти клас</h3>
+              <p class="muted">Цена за модул (8 урока): <strong>400 лв</strong></p>
+            </div>
+            <div class="card price-card tinted-blue">
+              <h3>4-ти клас</h3>
+              <p class="muted">Цена за модул (8 урока): <strong>400 лв</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="top">
+          <div class="brand"><span class="brand-logo"></span><span>Академия Усмивка</span></div>
+          <div class="nav">
+            <a href="/">Начало</a>
+            <a href="/kursove.html">Курсове</a>
+            <a href="/tsenorazpis.html">Ценоразпис</a>
+            <a href="/maturi.html">Матури</a>
+            <a href="/uchiteli.html">Преподаватели</a>
+            <a href="/kontakti.html">Контакти</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div>© <span id="year"></span> Академия Усмивка</div>
+          <div class="muted">Образование с отношение</div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  </html>
+
+

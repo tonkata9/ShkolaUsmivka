@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Свържете се с Академия Усмивка – запишете се за безплатна консултация и изберете правилния курс." />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Контакти – Академия Усмивка</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container navbar">
+        <a class="brand" href="/">
+          <span class="brand-logo"></span>
+          <span>Академия Усмивка</span>
+        </a>
+        <nav class="nav" aria-label="Основно меню">
+          <a href="/">Начало</a>
+          <a href="/kursove.html">Курсове</a>
+          <a href="/tsenorazpis.html">Ценоразпис</a>
+          <a href="/maturi.html">Матури</a>
+          <a href="/uchiteli.html">Преподаватели</a>
+          <a href="/kontakti.html" class="nav-cta btn btn-primary">Контакти</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Отвори меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="container">
+          <a href="/">Начало</a>
+          <a href="/kursove.html">Курсове</a>
+          <a href="/tsenorazpis.html">Ценоразпис</a>
+          <a href="/maturi.html">Матури</a>
+          <a href="/uchiteli.html">Преподаватели</a>
+          <div class="menu-cta">
+            <a href="/kontakti.html" class="btn btn-primary" style="width:100%; justify-content:center;">Свържете се с нас</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="badge">Винаги насреща</span>
+          <h1 class="section-title">Контакти</h1>
+          <div class="breadcrumbs">Начало / Контакти</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-wrap">
+          <form class="form" id="contactForm">
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 14px;">
+              <input class="input" type="text" name="name" placeholder="Име и фамилия" required />
+              <input class="input" type="tel" name="phone" placeholder="Телефон" />
+            </div>
+            <input class="input" type="email" name="email" placeholder="Имейл" />
+            <select class="input" name="course">
+              <option value="">Интересува ме курс...</option>
+              <optgroup label="Индивидуални">
+                <option>Математика</option>
+                <option>Български език и литература</option>
+                <option>Английски език</option>
+                <option>Немски език</option>
+                <option>Испански език</option>
+                <option>Химия</option>
+                <option>Физика</option>
+                <option>Руски език</option>
+                <option>Подготовка за Медицински</option>
+                <option>Кандидатстудентски за Математика (СУ)</option>
+                <option>Състезателна математика 1–4 клас</option>
+              </optgroup>
+              <optgroup label="Групови">
+                <option>БЕЛ – НВО 7. клас</option>
+                <option>Математика – НВО 7. клас</option>
+                <option>Английски език – A1</option>
+                <option>Английски език – A2</option>
+                <option>Немски език – A1</option>
+                <option>Немски език – A2</option>
+                <option>Състезателна математика – 3 клас</option>
+                <option>Състезателна математика – 4 клас</option>
+              </optgroup>
+            </select>
+            <textarea class="textarea" name="message" placeholder="Как можем да помогнем?"></textarea>
+            <button class="btn btn-primary" type="submit">Изпрати запитване</button>
+            <div id="formMsg" class="muted"></div>
+          </form>
+          <div class="card">
+            <h3>Нашите офиси</h3>
+            <p><strong>Телефон:</strong> 0886327582</p>
+            <div class="hr"></div>
+            <ul class="schedule" style="margin:0;">
+              <li><span class="lbl">Офис 1</span> <span class="time">София, ул. Пример 1</span></li>
+              <li><span class="lbl">Офис 2</span> <span class="time">София, бул. Пример 2</span></li>
+              <li><span class="lbl">Офис 3</span> <span class="time">София, ул. Пример 3</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="top">
+          <div class="brand"><span class="brand-logo"></span><span>Академия Усмивка</span></div>
+          <div class="nav">
+            <a href="/">Начало</a>
+            <a href="/kursove.html">Курсове</a>
+            <a href="/tsenorazpis.html">Ценоразпис</a>
+            <a href="/maturi.html">Матури</a>
+            <a href="/uchiteli.html">Преподаватели</a>
+            <a href="/kontakti.html">Контакти</a>
+          </div>
+        </div>
+        <div class="bottom">
+          <div>© <span id="year"></span> Академия Усмивка</div>
+          <div class="muted">Образование с отношение</div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  </html>
+
+
