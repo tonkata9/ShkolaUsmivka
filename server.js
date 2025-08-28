@@ -1,6 +1,9 @@
 import express from 'express'
 import cors from 'cors'
 import nodemailer from 'nodemailer'
+import dotenv from 'dotenv'
+
+dotenv.config() // <-- load .env file
 
 const app = express()
 const PORT = process.env.PORT || 5174
@@ -8,11 +11,11 @@ const PORT = process.env.PORT || 5174
 app.use(cors())
 app.use(express.json())
 
-// Configure transporter - for production set real SMTP creds in env
+// Configure transporter
 const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST || 'smtp.gmail.com',
+  host: process.env.SMTP_HOST,
   port: Number(process.env.SMTP_PORT || 587),
-  secure: false,
+  secure: process.env.SMTP_PORT === '465', // true for 465, false for 587
   auth: {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
@@ -36,13 +39,11 @@ app.post('/api/contact', async (req, res) => {
     await transporter.sendMail(mailOptions)
     res.status(200).send('OK')
   } catch (err) {
-    console.error(err)
+    console.error('❌ Mail error:', err)
     res.status(500).send('MAIL_ERROR')
   }
 })
 
 app.listen(PORT, () => {
-  console.log(`API server running on http://localhost:${PORT}`)
+  console.log(`✅ API server running on http://localhost:${PORT}`)
 })
-
-

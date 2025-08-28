@@ -10,12 +10,13 @@
     "server": "node server.js"
   },
   "devDependencies": {
-    "vite": "^7.1.2",
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "vite": "^7.1.2"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
     "express": "^4.19.2",
-    "nodemailer": "^6.9.13",
-    "cors": "^2.8.5"
+    "nodemailer": "^6.9.13"
   }
 }
