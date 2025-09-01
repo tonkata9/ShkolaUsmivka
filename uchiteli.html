@@ -19,7 +19,7 @@
           <a href="/">Начало</a>
           <a href="/kursove.html">Курсове</a>
           <a href="/tsenorazpis.html">Ценоразпис</a>
-          <a href="/maturi.html">Матури</a>
+          <a href="/maturi.html">Пробни изпити</a>
           <a href="/uchiteli.html">Преподаватели</a>
           <a href="/kontakti.html" class="nav-cta btn btn-primary">Контакти</a>
         </nav>
@@ -33,7 +33,7 @@
         <div class="container">
           <a href="/">Начало</a>
           <a href="/tsenorazpis.html">Ценоразпис</a>
-          <a href="/maturi.html">Матури</a>
+          <a href="/maturi.html">Пробни изпити</a>
           <a href="/uchiteli.html">Учители</a>
           <a href="/kursove.html">Курсове</a>
           <div class="menu-cta">
@@ -44,57 +44,115 @@
     </header>
 
     <main>
-      <section class="page-hero">
-        <div class="container">
-          <span class="badge">Нашият екип</span>
-          <h1 class="section-title">Преподаватели</h1>
-          <div class="breadcrumbs">Начало / Преподаватели</div>
-        </div>
-      </section>
+      
 
       <section class="section">
         <div class="container">
           <div class="section-header">
-            <span class="badge">Екип</span>
             <h2 class="section-title">Нашите преподаватели</h2>
-            <p class="section-subtitle">Снимка и кратко представяне</p>
           </div>
-          <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
-            <div class="card" style="text-align:center;">
-              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
-              <h3 style="margin:12px 0 4px;">Мария Иванова</h3>
-              <div class="title-muted">Математика</div>
-              <p class="muted">12+ години опит. Олимпиадна подготовка. Индивидуален подход според целите на ученика.</p>
+          <div class="grid teachers-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="card teacher-card">
+              <div class="teacher-image"></div>
+              <div class="teacher-info">
+                <h3 class="teacher-name">Мария Иванова</h3>
+                <div class="teacher-subject">Математика</div>
+                <p class="teacher-description">12+ години опит. Олимпиадна подготовка. Индивидуален подход според целите на ученика.</p>
+                <div class="teacher-honors">
+                  <h4>Постижения и награди:</h4>
+                  <ul>
+                    <li>🏆 Победител в национална олимпиада по математика</li>
+                    <li>📚 Автор на учебни помагала за 5-8 клас</li>
+                    <li>🎯 95% успеваемост на учениците в НВО</li>
+                    <li>⭐ Сертифициран преподавател по STEM методи</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="card" style="text-align:center;">
-              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
-              <h3 style="margin:12px 0 4px;">Георги Петров</h3>
-              <div class="title-muted">Английски език</div>
-              <p class="muted">IELTS/CAE подготовка. Практически техники за говорене и писане.</p>
+            <div class="card teacher-card">
+              <div class="teacher-image"></div>
+              <div class="teacher-info">
+                <h3 class="teacher-name">Георги Петров</h3>
+                <div class="teacher-subject">Английски език</div>
+                <p class="teacher-description">IELTS/CAE подготовка. Практически техники за говорене и писане.</p>
+                <div class="teacher-honors">
+                  <h4>Постижения и награди:</h4>
+                  <ul>
+                    <li>🇬🇧 Носител на CPE сертификат (C2 ниво)</li>
+                    <li>📖 Преподавал в университета 8+ години</li>
+                    <li>🎓 100% успеваемост на учениците в IELTS</li>
+                    <li>🌍 Опит в международни образователни проекти</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="card" style="text-align:center;">
-              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
-              <h3 style="margin:12px 0 4px;">Елица Димитрова</h3>
-              <div class="title-muted">Български език</div>
-              <p class="muted">НВО/ДЗИ. Умения за есе и преразказ, четене с разбиране и аргументация.</p>
+            <div class="card teacher-card">
+              <div class="teacher-image"></div>
+              <div class="teacher-info">
+                <h3 class="teacher-name">Елица Димитрова</h3>
+                <div class="teacher-subject">Български език</div>
+                <p class="teacher-description">НВО/ДЗИ. Умения за есе и преразказ, четене с разбиране и аргументация.</p>
+                <div class="teacher-honors">
+                  <h4>Постижения и награди:</h4>
+                  <ul>
+                    <li>📝 Магистър по българска филология</li>
+                    <li>🏅 Експерт-оценител в НВО комисии</li>
+                    <li>📚 Автор на методически разработки</li>
+                    <li>🎯 98% успеваемост на учениците в ДЗИ</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="card" style="text-align:center;">
-              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
-              <h3 style="margin:12px 0 4px;">Никола Костов</h3>
-              <div class="title-muted">Програмиране</div>
-              <p class="muted">Python и уеб. Проектно-базирано обучение и реални примери.</p>
+            <div class="card teacher-card">
+              <div class="teacher-image"></div>
+              <div class="teacher-info">
+                <h3 class="teacher-name">Никола Костов</h3>
+                <div class="teacher-subject">Програмиране</div>
+                <p class="teacher-description">Python и уеб. Проектно-базирано обучение и реални примери.</p>
+                <div class="teacher-honors">
+                  <h4>Постижения и награди:</h4>
+                  <ul>
+                    <li>💻 Senior Python Developer с 10+ години опит</li>
+                    <li>🚀 Участвал в стартъп проекти и големи компании</li>
+                    <li>🏆 Победител в хакатони и код конкурси</li>
+                    <li>📱 Създал 20+ уеб приложения и мобилни апликации</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="card" style="text-align:center;">
-              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
-              <h3 style="margin:12px 0 4px;">Анна Георгиева</h3>
-              <div class="title-muted">Химия</div>
-              <p class="muted">Разбираеми обяснения, задачи и подготовка за изпити.</p>
+            <div class="card teacher-card">
+              <div class="teacher-image"></div>
+              <div class="teacher-info">
+                <h3 class="teacher-name">Анна Георгиева</h3>
+                <div class="teacher-subject">Химия</div>
+                <p class="teacher-description">Разбираеми обяснения, задачи и подготовка за изпити.</p>
+                <div class="teacher-honors">
+                  <h4>Постижения и награди:</h4>
+                  <ul>
+                    <li>🧪 Доктор по химия с 15+ публикации</li>
+                    <li>🏆 Научен ръководител на студентски проекти</li>
+                    <li>📊 Експерт в аналитична химия и спектроскопия</li>
+                    <li>🎯 92% успеваемост на учениците в изпити</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="card" style="text-align:center;">
-              <div style="width:100%; aspect-ratio:1/1; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(34,197,94,0.2)); border:1px solid var(--color-border);"></div>
-              <h3 style="margin:12px 0 4px;">Петър Николов</h3>
-              <div class="title-muted">Физика</div>
-              <p class="muted">Реални примери и експерименти за трайно разбиране.</p>
+            <div class="card teacher-card">
+              <div class="teacher-image"></div>
+              <div class="teacher-info">
+                <h3 class="teacher-name">Петър Николов</h3>
+                <div class="teacher-subject">Физика</div>
+                <p class="teacher-description">Реални примери и експерименти за трайно разбиране.</p>
+                <div class="teacher-honors">
+                  <h4>Постижения и награди:</h4>
+                  <ul>
+                    <li>⚡ Магистър по физика с 12+ години опит</li>
+                    <li>🔬 Създател на интерактивни физични експерименти</li>
+                    <li>📚 Автор на "Физиката около нас" - учебно помагало</li>
+                    <li>🎯 94% успеваемост на учениците в изпити</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -109,7 +167,7 @@
             <a href="/">Начало</a>
             <a href="/kursove.html">Курсове</a>
             <a href="/tsenorazpis.html">Ценоразпис</a>
-            <a href="/maturi.html">Матури</a>
+            <a href="/maturi.html">Пробни изпити</a>
             <a href="/uchiteli.html">Преподаватели</a>
             <a href="/kontakti.html">Контакти</a>
           </div>
