@@ -1,0 +1,6 @@
+[build]
+  publish = "dist"          # or wherever your built Vite site is
+  command = "npm run build"
+
+[functions]
+  directory = "netlify/functions"

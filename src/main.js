@@ -45,11 +45,11 @@ if (form) {
       return
     }
 
-    fetch('http://localhost:5174/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, phone, course, message })
-    })
+ fetch('/.netlify/functions/contact', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ name, email, phone, course, message })
+})
       .then(async (res) => {
         if (!res.ok) throw new Error(await res.text())
         if (msg) msg.textContent = 'Благодарим! Запитването е изпратено.'
