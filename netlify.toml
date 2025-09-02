@@ -1,6 +1,136 @@
 [build]
-  publish = "dist"          # or wherever your built Vite site is
+  publish = "dist"
   command = "npm run build"
 
-[functions]
-  directory = "netlify/functions"
+# Handle direct file access
+[[redirects]]
+  from = "/kursove"
+  to = "/kursove.html"
+  status = 200
+
+[[redirects]]
+  from = "/tsenorazpis"
+  to = "/tsenorazpis.html"
+  status = 200
+
+[[redirects]]
+  from = "/maturi"
+  to = "/maturi.html"
+  status = 200
+
+[[redirects]]
+  from = "/uchiteli"
+  to = "/uchiteli.html"
+  status = 200
+
+[[redirects]]
+  from = "/kontakti"
+  to = "/kontakti.html"
+  status = 200
+
+# Handle predmeti pages
+[[redirects]]
+  from = "/predmeti/matematika"
+  to = "/predmeti/matematika.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/bel"
+  to = "/predmeti/bel.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/fizika"
+  to = "/predmeti/fizika.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/himia"
+  to = "/predmeti/himia.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/medicina"
+  to = "/predmeti/medicina.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/angliiski"
+  to = "/predmeti/angliiski.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/ruski"
+  to = "/predmeti/ruski.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/nemski"
+  to = "/predmeti/nemski.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/ispanski"
+  to = "/predmeti/ispanski.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/foreign-languages"
+  to = "/predmeti/foreign-languages.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/de-a1"
+  to = "/predmeti/de-a1.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/de-a2"
+  to = "/predmeti/de-a2.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/en-a1"
+  to = "/predmeti/en-a1.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/en-a2"
+  to = "/predmeti/en-a2.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/math-4"
+  to = "/predmeti/math-4.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/math-nvo"
+  to = "/predmeti/math-nvo.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/bel-nvo"
+  to = "/predmeti/bel-nvo.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/sastez-math"
+  to = "/predmeti/sastez-math.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/su-math"
+  to = "/predmeti/su-math.html"
+  status = 200
+
+[[redirects]]
+  from = "/predmeti/grupi"
+  to = "/predmeti/grupi.html"
+  status = 200
+
+# Fallback for any other routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
