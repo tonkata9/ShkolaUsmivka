@@ -1129,3 +1129,79 @@ a {
 }
 
 .mobile-menu .menu-cta { padding: 12px 20px; }
+
+/* Why Choose Us Section */
+.why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.why-us-item {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-us-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.why-us-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.why-us-item:hover::before {
+  opacity: 1;
+}
+
+.why-us-item h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.why-us-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+/* Responsive design for Why Choose Us */
+@media (max-width: 768px) {
+  .why-us-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .why-us-item {
+    padding: 25px 20px;
+  }
+  
+  .why-us-item h4 {
+    font-size: 18px;
+  }
+  
+  .why-us-item p {
+    font-size: 15px;
+  }
+}

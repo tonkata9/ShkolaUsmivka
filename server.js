@@ -32,7 +32,7 @@ app.post('/api/contact', async (req, res) => {
     const mailOptions = {
       from: process.env.FROM_EMAIL || process.env.SMTP_USER,
       to: 'uchebencentarusmivka@gmail.com',
-      subject: 'Ново запитване от сайта – Академия Усмивка',
+      subject: 'Ново запитване от сайта – Учебен център Усмивка',
       text: `Име: ${name || '-'}\nИмейл: ${email || '-'}\nТелефон: ${phone || '-'}\nКурс: ${course || '-'}\n\nСъобщение:\n${message || '-'}`,
     }
 
