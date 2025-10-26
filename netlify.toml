@@ -105,6 +105,11 @@
   status = 200
 
 [[redirects]]
+  from = "/predmeti/math-6"
+  to = "/predmeti/math-6.html"
+  status = 200
+
+[[redirects]]
   from = "/predmeti/math-nvo"
   to = "/predmeti/math-nvo.html"
   status = 200

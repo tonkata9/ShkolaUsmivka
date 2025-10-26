@@ -28,6 +28,7 @@ export default defineConfig({
         'en-a2': './predmeti/en-a2.html',
 
         'math-4': './predmeti/math-4.html',
+        'math-6': './predmeti/math-6.html',
         'math-nvo': './predmeti/math-nvo.html',
         'bel-nvo': './predmeti/bel-nvo.html',
         'sastez-math': './predmeti/sastez-math.html',
